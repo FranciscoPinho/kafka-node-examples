@@ -1,0 +1,16 @@
+{
+  "name": "kafka-node-design-forum",
+  "version": "1.0.0",
+  "description": "simple examples of kafka producer and consumer",
+  "main": "consumerExample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.19.2",
+    "kafka-node": "^5.0.0"
+  }
+}

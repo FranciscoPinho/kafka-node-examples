@@ -1,8 +1,8 @@
 # kafka-node-examples
 
-This repository contains example code for solving Kafka consumer back pressure issues. This is essentially the scenario where a particular topic contains a big number of unprocessed messages (events). Additionally the processing of the message is slower than the rate at which the consumer is pulling messages from the Kafka cluster, this creates a situation in which a deployed consumer service could run into out of memory issues by being overwhelmed with more messages than it can process on time. In this example the processing of the message would require communication with some kind of external server (http request) which is the ideal use case for a Node service which excels in I/O intensive programs.
+This repository contains example code for solving Kafka consumer back pressure issues. This is essentially the scenario where a particular topic contains a big number of unprocessed messages (events). Additionally the processing of the message is slower than the rate at which the consumer is pulling messages from the Kafka cluster, this creates a situation in which a deployed consumer service could run into out of memory issues by being overwhelmed with more messages than it can process on time. In this example the processing of the message would require communication with some kind of external server (http request) which is the ideal use case for a Node service which excels in I/O intensive tasks.
 
-This code ran against a simple containerized kafka deploymente which can be found here: https://github.com/wurstmeister/kafka-docker
+This code ran against a simple containerized kafka deployment which can be found here: https://github.com/wurstmeister/kafka-docker
 
 - We have a simple example producer program (producerExample.js) that concurrently sends 10k messages into the designated Kafka Topic.
 
